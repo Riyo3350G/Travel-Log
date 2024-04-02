@@ -77,7 +77,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Your Name** - *Initial work* - [Riyo3350G](https://github.com/Riyo3350G)
+* **Redwan Ben Yechou** - *Software Engineer* - [Riyo3350G](https://github.com/Riyo3350G)
 
 ## License
 
