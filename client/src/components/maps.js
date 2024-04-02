@@ -8,8 +8,6 @@ import { useEffect } from "react";
 import { getLocations } from "../pages/locations/api";
 import LocationViewModal from "../pages/locations/locationViewModal";
 
-// const mapsApiKey = "AIzaSyCNiAV0m6ic9BWUML8BcLt2knCdKn10z80";
-
 function Maps() {
   const [markerPosition, setMarkerPosition] = useState([]);
   const [showForm, setShowForm] = useState(false);
