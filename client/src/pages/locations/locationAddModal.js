@@ -55,8 +55,8 @@ function LocationAddModal({ show, handleClose }) {
 
   const handleImageChange = (event) => {
     if (event.target.files) {
-      const filesArray = Array.from(event.target.files); // Convert FileList to Array
-      setImage(filesArray); // Update the state
+      const filesArray = Array.from(event.target.files);
+      setImage(filesArray);
     }
   };
 
@@ -139,18 +139,15 @@ function LocationAddModal({ show, handleClose }) {
 
             <GoogleMap
               mapContainerStyle={containerStyle}
-              center={markerPosition} // Center the map at the marker position
+              center={markerPosition}
               zoom={12}
               onClick={handleClick}
             >
-              {/* Step 3: Use the state for the marker's position */}
               <Marker
                 position={markerPosition}
                 onClick={() => {
-                  // Marker click handler if needed
                 }}
               >
-                {/* Optional: Showing an InfoWindow */}
                 <InfoWindow position={markerPosition}>
                   <div>Selected Location</div>
                 </InfoWindow>
