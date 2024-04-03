@@ -6,7 +6,7 @@ import {
   FormControl,
   InputGroup,
 } from "react-bootstrap";
-import { Pencil, Trash, CheckLg, X } from "react-bootstrap-icons"; // Importing additional icons for Save and Cancel
+import { Pencil, Trash, CheckLg, X } from "react-bootstrap-icons"; 
 import { getCommentsByUserId, putComment, deleteComment } from "./api";
 
 const MyComments = () => {
