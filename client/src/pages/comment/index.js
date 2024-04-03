@@ -106,14 +106,14 @@ const MyComments = () => {
                     onClick={() => handleEdit(comment._id, comment.comment)}
                     className="m-1"
                   >
-                    <Pencil /> {/* Edit Icon */}
+                    <Pencil />
                   </Button>
                   <Button
                     variant="danger"
                     size="sm"
                     onClick={() => handleDelete(comment._id)}
                   >
-                    <Trash /> {/* Delete Icon */}
+                    <Trash />
                   </Button>
                 </>
               )}
