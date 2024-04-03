@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Modal, Carousel, Button, Form } from "react-bootstrap";
-import { getLocationComments, postComment } from "./api"; // Assume addLocationComment is your API method to add a comment
-import "./locationViewModal.css";
+import { getLocationComments, postComment } from "./api";
 
 function LocationViewModal({ show, handleClose, choosed }) {
   const [comments, setComments] = useState([]);
-  const [newComment, setNewComment] = useState(""); // State to store the new comment input
+  const [newComment, setNewComment] = useState("");
 
   useEffect(() => {
     const fetchComments = async () => {
@@ -28,7 +27,6 @@ function LocationViewModal({ show, handleClose, choosed }) {
 
   const handleAddComment = async () => {
     try {
-      // Assuming your API requires the location ID and the comment text
       const userId = localStorage.getItem("userId");
       const isSuccess = await postComment(choosed.id, userId, newComment);
       if (isSuccess) {
