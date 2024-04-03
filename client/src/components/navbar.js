@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown"; // Keep this for the profile dropdown
+import NavDropdown from "react-bootstrap/NavDropdown";
 import { PersonCircle, Map, ChatSquareText, House } from "react-bootstrap-icons";
 import LocationAddModal from "../pages/locations/locationAddModal";
 import { logout } from "../pages/login/api";
@@ -43,7 +43,6 @@ function NavBar() {
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
               <Nav.Link href="/"><House /> Home</Nav.Link>
-              {/* Direct links for My Locations and My Comments */}
               <Nav.Link href="/my-locations"><Map /> My Locations</Nav.Link>
               <Nav.Link href="/my-comments"><ChatSquareText /> My Comments</Nav.Link>
             </Nav>
