@@ -5,6 +5,7 @@ import { getProfile, updateProfile } from "../pages/login/api";
 import { COUNTRIES } from "../utils/countries";
 
 function UserProfileModal({ show, handleClose, userName }) {
+  
   const [profile, setProfile] = useState({});
 
   useEffect(() => {
