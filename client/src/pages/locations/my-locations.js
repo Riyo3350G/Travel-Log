@@ -1,4 +1,3 @@
-// MyLocations.js
 import React, { useEffect, useState } from "react";
 import { Card, Button, Container, Row, Col, Alert } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
@@ -62,7 +61,7 @@ const MyLocations = () => {
           ))}
         </Row>
       ) : locations === null ? (
-        <div>Loading...</div> // This is shown when the locations are null (initially, when data is being fetched)
+        <div>Loading...</div>
       ) : (
         <Alert variant="info" className="w-100 text-center">
           No locations
